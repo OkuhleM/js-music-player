@@ -1,0 +1,118 @@
+body {
+  text-align: center;
+  background-color: pink;
+  transition: background-color 0.5s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.track-icon {
+  margin: auto;
+  height: 250px;
+  width: 250px;
+  background-image: url('https://images.pexels.com/photos/262034/pexels-photo-262034.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  background-size: cover;
+  border-radius: 15%;
+}
+
+.container {
+  margin-top: 10rem;
+}
+
+.current-song {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Concert One';
+  margin-bottom: 40px;
+  
+}
+.index{
+    letter-spacing: 1px;
+}
+.track-details {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.track-timer {
+  margin-top: 2rem;
+
+}
+
+/* .buttons-portion {
+  margin-top: 2rem;
+} */
+
+.volume-container {
+  margin-top: 2rem;
+}
+
+.track-name,
+.track-number {
+  font-family: 'Merienda';
+  font-weight: bold;
+  /* font-family: "Fredoka One"; */
+}
+
+.track-artist,
+.album {
+  font-family: 'Merienda';
+}
+
+.seek_slider, .volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: black;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  /* Modify the appearance of the slider thumb */
+  .seek-slider::-webkit-slider-thumb, .volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .seek-slider:hover, .volume:hover {
+    opacity: 1.0;
+  }
+  
+  .seek-slider {
+    width: 50%;
+  }
+  
+  .volume {
+    width: 30%;
+  }
+  
+
+  .buttons-portion {
+   
+    margin-top: 2rem;
+  }
+  
+  #play-pause, #prev-btn, #next-btn {
+    padding: 25px;
+    opacity: 0.8;
+    transition: opacity .2s;
+  }
+  
+  #play-pause:hover, #prev-btn:hover, #next-btn:hover {
+    opacity: 1.0;
+  }
+  

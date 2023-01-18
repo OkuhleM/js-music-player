@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href='https://fonts.googleapis.com/css?family=Concert One|Fredoka One|Merienda' rel='stylesheet'>
+
+    <title>Music player</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="current-song">
+        <p>playing </p>
+        <span class="index">number of number</span>
+      </div>
+      <div class="track-icon"></div>
+      <div class="track-details">
+        <span class="track-name">Track name</span> 
+        <span class="track-artist">Track Artist</span> 
+        <span class="track-number">Track number</span> 
+        <span class="album">Album name</span>
+      </div>
+
+      
+      <div class="track-timer">
+        <span class="current-time">00:00</span>
+        <input
+        type="range"
+        min="1"
+        max="100"
+        value="0"
+        class="seek-slider"
+        onchange="setSeek()"
+        />
+        <span class="total-duration">00:00</span>
+      </div>
+      <div class="buttons-portion"> 
+        <span id="prev-btn">
+          
+          <i class="fa fa-backward fa-2x" aria-hidden="true" onclick="prevTrack()"></i>
+        </span>
+        <span id="play-pause" onclick="playPauseSound()">
+          <i class="fa fa-play-circle fa-3x"></i>
+        </span>
+        <span id="next-btn">
+
+          <i class="fa fa-forward fa-2x" aria-hidden="true" onclick="nextTrack()"></i>
+        </span>
+        
+      </div>
+
+      <div class="volume-container">
+        <i class="fa fa-volume-down"></i>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="50"
+          onchange="setVolume()"
+          class="volume"
+        />
+        <i class="fa fa-volume-up"></i>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
