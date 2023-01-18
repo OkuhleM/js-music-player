@@ -42,7 +42,7 @@ body {
 
 .track-timer {
   margin-top: 2rem;
-
+  cursor: pointer;
 }
 
 /* .buttons-portion {
@@ -94,6 +94,7 @@ body {
   
   .seek-slider {
     width: 50%;
+    cursor: pointer;
   }
   
   .volume {
